@@ -1,0 +1,10 @@
+<h2>Checkbox que oculta texto (*ngIf)</h2>
+<input type="checkbox" (mousedown)="div_oculto = !div_oculto">{{ div_oculto ? 'Div visible' : 'Div oculto' }}
+<div *ngIf="div_oculto">
+    <p>Este é o div que escondemos ou mostramos con *ngIf</p>
+</div>
+
+<h2>Botón que oculta texto (*ngIf)</h2>
+<button (click)="texto_oculto = !texto_oculto">{{texto_oculto ? 'Texto visible' : 'Texto oculto'}}</button>
+<span>Valor da variable texto_oculto = {{texto_oculto}}</span>
+<p *ngIf="texto_oculto">Elemento visible con *ngIf</p>

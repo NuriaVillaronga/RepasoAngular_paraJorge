@@ -1,0 +1,36 @@
+.verde {
+    color: rgb(48, 224, 48);
+}
+.vermello {
+    color: red;
+}
+.azul {
+    color: rgb(43, 155, 247);
+}
+.ocultar {
+    display: none;
+}
+.columnaPintada {
+    background-color: antiquewhite;
+}
+.sublinhado {
+    text-decoration: underline;
+}
+.cursiva {
+    font-style: oblique;
+}
+.plum {
+    background-color: plum;
+}
+.pink {
+    background-color: pink;
+}
+
+.container_products {
+    border: 1px solid black; 
+    width: 60%; 
+    text-align:center; 
+    padding-top:10px; 
+    padding-bottom:10px;
+    margin-top: 10px;
+}

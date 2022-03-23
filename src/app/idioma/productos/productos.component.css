@@ -1,0 +1,8 @@
+.container_products {
+    border: 1px solid black; 
+    width: 60%; 
+    text-align:center; 
+    padding-top:10px; 
+    padding-bottom:10px;
+    margin-top: 10px;
+}

@@ -1,0 +1,9 @@
+<div *ngFor="let producto of productos" class="container_products">
+    <div> 
+        <img  src="./assets/imagenes/{{producto[0].imagen}}">
+        <p>
+            <div>{{producto[0].nombre}}</div>
+            <div>{{producto[0].precio}} €</div>
+            <div>{{producto[0].descripcion}} €</div> 
+    </div>
+</div>

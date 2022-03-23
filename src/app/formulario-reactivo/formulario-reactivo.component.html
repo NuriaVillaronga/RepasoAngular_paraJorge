@@ -1,0 +1,35 @@
+<br>
+<form [formGroup]="formularioRexistro">
+  <section>
+    <label for="dataRexistro">Rexistrado o día:</label>
+    <input name="dataRexistro" formControlName="dataRexistro" type="date"/>
+  </section>
+
+  <section>
+    <label for="nome">Nome:</label>
+    <input name="nome" formControlName="nome" type="text"/>
+    <span>{{obterMensaxeErro('nome')}}</span>
+  </section>
+
+  <section>
+    <label for="email">E-mail:</label>
+    <input name="email" formControlName="email" type="email"/>
+    <span>{{obterMensaxeErro('email')}}</span>
+  </section>
+
+  <section>
+    <label for="contrasinal">Contrasinal:</label>
+    <input name="contrasinal" formControlName="contrasinal" type="password" pattern="^[0-9][a-zA-Z0-9.\-_$]{7,}"/>
+    <span>{{obterMensaxeErro('contrasinal')}}</span>
+  </section>
+
+  <section>
+    <label for="confirmarContrasinal">Contrasinal:</label>
+    <input name="confirmarContrasinal" formControlName="confirmarContrasinal" type="password"/>
+    <span>{{obterMensaxeErro('confirmarContrasinal')}}</span>
+  </section>
+
+  <section>
+    <button (click)="rexistrar()" [disabled]="formularioRexistro.invalid">Rexistrar</button>
+  </section>
+</form>

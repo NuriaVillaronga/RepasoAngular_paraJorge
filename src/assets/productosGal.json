@@ -1,0 +1,21 @@
+[
+    {
+        "nombre":"Anel cruz Chrome Hearts", 
+        "precio":850, 
+        "imagen":"anilloCruz.png", 
+        "descripcion":"Anel de prata con forma de cruz de Malta de Chrome Hearts. Peso neto: 1.4g."
+    },
+    {
+        "nombre":"Broche Art Decó", 
+        "precio":12600, 
+        "imagen":"brocheDeco.png", 
+        "descripcion":"Broche Art Decó con forma floral composto de platino, ouro branco, diamantes e unha esmeralda central. Peso neto: 15.6g.s"
+    },
+    {
+        "nombre":"Pendientes colgantes de rubí",  
+        "precio":58980, 
+        "imagen":"pendientesColgantesRubi.png", 
+        "descripcion":"Pendientes de estilo Barroco compostos cada un por duas pezas cun rubí ovalado central recubertos de diamantes talla brillante. Peso neto: 7.8g."
+    }
+]
+

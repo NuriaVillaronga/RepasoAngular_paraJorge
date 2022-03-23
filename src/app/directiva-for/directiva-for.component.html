@@ -1,0 +1,38 @@
+<h2>Amosar listaxe de strings en taboa (*ngFor + [ngClass])</h2>
+<table border="1" style="border-collapse:collapse; width:400px; text-align:center;">
+    <tr>
+        <th>Nome</th>
+        <th>Apelido</th>
+        <th>Idade</th>
+    </tr>
+    <tr *ngFor="let datos of lista; let i=index; let impar=odd; let par=even;" [ngClass]="{columnaPintada: i == 1, sublinhado: impar, cursiva: par}">
+        <td>{{ datos[0] }}</td>
+        <td>{{ datos[1] }}</td>
+        <td>{{ datos[2] }}</td> 
+    </tr>
+</table>
+
+<h2>Amosar listaxe ordenado de <u>persoas</u> (*ngFor + [ngClass])</h2>
+<ol>
+    <li *ngFor="let rexistro of persoa;" [ngClass]="{ocultar: rexistro[0].idade < 18, verde: rexistro[0].pais == 'España', vermello: rexistro[0].pais == 'Portugal', azul: rexistro[0].pais == 'Francia'}">
+        {{rexistro[0].nome}} , {{rexistro[0].idade}} , {{rexistro[0].pais}}
+    </li>
+</ol>
+
+<h2>Amosar <u>productos</u> según o <u>idioma</u> seleccionado (*ngFor + [ngModel] + [ngClass])</h2>
+Selecciona o idioma : <select [(ngModel)]="idioma" (change)="cambiarIdioma(idioma)">
+                            <option value="gal">Galego</option>
+                            <option value="por">Portugués</option>
+                        </select>
+
+<br>O idioma actual é: <b>{{idioma}}</b>
+
+<div *ngFor="let producto of productos" class="container_products" [ngClass]="{plum: producto[0].precio < 15000, pink: producto[0].precio > 15000}">
+    <div> 
+        <img  src="./assets/imagenes/{{producto[0].imagen}}">
+        <p>
+            <div>{{producto[0].nombre}}</div>
+            <div>{{producto[0].precio}} €</div>
+            <div>{{producto[0].descripcion}} €</div> 
+    </div>
+</div>

@@ -1,0 +1,20 @@
+[
+    {
+        "nombre":"Anel cruz Chrome Hearts", 
+        "precio":850, 
+        "imagen":"anilloCruz.png", 
+        "descripcion":"Anel de prata em forma de cruz de Malta de Chrome Hearts. Peso líquido: 1,4g."
+    },
+    {
+        "nombre":"Broche Art Decó", 
+        "precio":12600, 
+        "imagen":"brocheDeco.png", 
+        "descripcion":"Broche Art Déco com formato floral composto por platina, ouro branco, diamantes e uma esmeralda central. Peso líquido: 15,6g."
+    },
+    {
+        "nombre":"Brincos de rubi",  
+        "precio":58980, 
+        "imagen":"pendientesColgantesRubi.png", 
+        "descripcion":"Brincos estilo Barroco cada um composto por duas peças com um rubi oval central coberto com diamantes em talhe brilhante. Peso líquido: 7,8g."
+    }
+]

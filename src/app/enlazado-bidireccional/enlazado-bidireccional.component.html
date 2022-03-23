@@ -1,0 +1,12 @@
+<h4 [ngStyle]="{'color': obterCor()}">{{titulo}}</h4>
+
+
+<i>Modificar texto: </i><input [(ngModel)]="titulo" size="50px"/>
+
+<p><button (click)="cambiarCor()">Cambiar a cor</button>
+
+<p><i>Cambiar idioma: </i><select [(ngModel)]="idioma" (change)="cambiarIdioma(idioma)">
+                                <option value="gal">Galego</option>
+                                <option value="es">Español</option>
+                          </select>
+

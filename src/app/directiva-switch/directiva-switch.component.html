@@ -1,0 +1,16 @@
+<h2>Ver premios (*ngSwitch)</h2>
+<button (click)="premio>6 ? premio=1 : premio=premio+1">{{premio}}º Premio</button> 
+<!--
+    Se o premio é maior que 6, o premio volve ao 1, xa que non hai mais premios ca 6.
+    Se non é maior que 6, o premio vaise incrementando (vanse mostrando os seguintes premios)
+--> 
+
+<div [ngSwitch]="premio"> 
+    <h4 *ngSwitchCase="1" [ngStyle]="{'color':'red'}">{{listaPremios[0]}}</h4>
+    <h4 *ngSwitchCase="2" [ngStyle]="{'color':'blue'}">{{listaPremios[1]}} </h4>
+    <h4 *ngSwitchCase="3" [ngStyle]="{'color':'green'}">{{listaPremios[2]}}</h4>
+    <h4 *ngSwitchCase="4" [ngStyle]="{'color':'red'}">{{listaPremios[3]}}</h4>
+    <h4 *ngSwitchCase="5" [ngStyle]="{'color':'blue'}">{{listaPremios[4]}}</h4>
+    <h4 *ngSwitchCase="6" [ngStyle]="{'color':'green'}">{{listaPremios[5]}} </h4>
+    <h4 *ngSwitchDefault="1" [ngStyle]="{'color':'red'}">¡¡¡SEN PREMIO!!! </h4>
+</div>
